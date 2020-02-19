@@ -330,6 +330,7 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
         _collectionView.fs_height = FSCalendarHalfFloor(_collectionView.fs_height);
     }
     
+    [_collectionViewLayout invalidateLayout];
 }
 
 #if TARGET_INTERFACE_BUILDER
